@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anexo Tecnologia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Tela de Login -->
+        <div class="screen active" id="login-screen">
+            <img src="logo.png" alt="Anexo Tecnologia" class="logo">
+            <h2>Entrar</h2>
+            <input type="text" id="login-email" placeholder="ID/Email">
+            <input type="password" id="login-password" placeholder="Senha">
+            <button onclick="navigateTo('menu-screen')">Acessar</button>
+        </div>
+
+        <!-- Tela de Veículos -->
+        <div class="screen hidden" id="menu-screen">
+            <img src="logo.png" alt="Anexo Tecnologia" class="logo">
+            <h2>Veículos</h2>
+            <div id="vehicle-list"></div>
+            <button onclick="navigateTo('add-vehicle-screen')">Adicionar Veículo</button>
+            <button onclick="navigateTo('history-screen')">Histórico de Serviços</button>
+            <button onclick="navigateTo('login-screen')">Logout</button>
+        </div>
+
+        <!-- Tela de Adicionar Veículo -->
+        <div class="screen hidden" id="add-vehicle-screen">
+            <img src="logo.png" alt="Anexo Tecnologia" class="logo">
+            <h2>Adicionar Veículo</h2>
+            <input type="text" id="vehicle-plate" placeholder="Digite a placa do caminhão">
+            <button onclick="saveVehicle()">Salvar Veículo</button>
+        </div>
+
+        <!-- Tela de Preencher Dados dos Pneus -->
+        <div class="screen hidden" id="tire-data-screen">
+            <img src="logo.png" alt="Anexo Tecnologia" class="logo">
+            <h2>Preencher Dados dos Pneus</h2>
+            <input type="text" id="tire-number" placeholder="Número de Fogo">
+            <input type="text" id="last-pressure" placeholder="Última Pressão Medida (PSI)">
+            <input type="text" id="tire-position" placeholder="Posição no Veículo">
+            <button onclick="saveTireData()">Salvar Dados</button>
+        </div>
+
+        <!-- Tela de Registro de Serviço -->
+        <div class="screen hidden" id="service-screen">
+            <img src="logo.png" alt="Anexo Tecnologia" class="logo">
+            <h2>Registro de Serviço</h2>
+            <input type="text" id="service-pressure" placeholder="Pressão do Pneu (PSI)">
+            <input type="text" id="service-depth" placeholder="Profundidade do Sulco (mm)">
+            <select id="service-movement">
+                <option value="Rodízio">Rodízio</option>
+                <option value="Recapeamento">Recapeamento</option>
+                <option value="Estoque">Estoque</option>
+                <option value="Vendido">Vendido</option>
+                <option value="Sucateado">Sucateado</option>
+            </select>
+            <button onclick="saveService()">Salvar Serviço</button>
+        </div>
+
+        <!-- Tela de Histórico -->
+        <div class="screen hidden" id="history-screen">
+            <img src="logo.png" alt="Anexo Tecnologia" class="logo">
+            <h2>Histórico de Serviços</h2>
+            <div id="history-list"></div>
+            <button onclick="navigateTo('menu-screen')">Voltar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
