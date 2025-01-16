@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d35;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 100%;
+    max-width: 412px;
+    height: 100%;
+    max-height: 915px;
+    background-color: #657880;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.screen.active {
+    display: flex;
+}
+
+.logo {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input, select {
+    background-color: #e4e4e4;
+    color: #333;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004290;
+}
+
+#history-list {
+    width: 80%;
+    background-color: #e4e4e4;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+/* Estilo do botão dos veículos cadastrados */
+#vehicle-list button {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #333333; /* Cor do texto escura para contraste */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#vehicle-list button:hover {
+    background-color: #f1f1f1; /* Cor de fundo levemente mais clara ao passar o mouse */
+}
+
+/* Botão de remoção do veículo */
+#vehicle-list button {
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Texto escuro */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1; /* Ocupa o espaço restante */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#vehicle-list button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botão "X" */
+#vehicle-list button + button {
+    background-color: #ff4d4d; /* Vermelho para destaque */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#vehicle-list button + button:hover {
+    background-color: #d11a1a; /* Vermelho mais escuro ao passar o mouse */
+}
+
+
