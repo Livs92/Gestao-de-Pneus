@@ -1,4 +1,4 @@
-# 🛞 Sistema de Gestão de Pneus — Anexo Tecnologia
+# Sistema de Gestão de Pneus — Anexo Tecnologia
 
 Protótipo de alta fidelidade desenvolvido com **HTML**, **CSS** e **JavaScript**, com o objetivo de **automatizar o processo de gestão de pneus** da **Anexo Tecnologia**.
 
