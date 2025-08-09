@@ -1,9 +1,6 @@
 # Sistema de Gestão de Pneus — Anexo Tecnologia
 
-Protótipo de alta fidelidade desenvolvido com **HTML**, **CSS** e **JavaScript**, com o objetivo de **automatizar o processo de gestão de pneus** da **Anexo Tecnologia**.
-
-O sistema foi projetado para oferecer **maior eficiência, controle e visibilidade** nas operações da empresa, atendendo especialmente às necessidades dos borracheiros.  
-Com uma **interface intuitiva e funcional**, o sistema simplifica o registro e acompanhamento das informações sobre pneus, **otimizando processos e economizando tempo**.
+Protótipo de alta fidelidade desenvolvido com o objetivo de **automatizar o processo de gestão de pneus** da **Anexo Tecnologia**. O sistema foi projetado para oferecer **maior eficiência, controle e visibilidade** nas operações da empresa, atendendo especialmente às necessidades dos borracheiros.  Com uma **interface intuitiva e funcional**, o sistema simplifica o registro e acompanhamento das informações sobre pneus, **otimizando processos e economizando tempo**.
 
 ---
 
